@@ -1,10 +1,14 @@
 package factoryMethod
 
 @main def start(): Unit =
-  val gun: ConcreteFactoryGun = ConcreteFactoryGun()
-  val ak47: Product = gun.createProduct()
-  println(ak47.operation())
+  println("Factory Method")
 
-  val car: ConcreteFactoryCar = ConcreteFactoryCar()
-  val nissan: Product = car.createProduct()
-  println(nissan.operation())
+  val ak47 = GunFactory.createGun("ak47")
+  ak47 match
+    case Some(v) => println(v.doStuff)
+    case _ => println("gun not found")
+
+  val m4a1 = GunFactory.createGun("m4a1")
+  m4a1 match
+    case Some(v) => println(v.doStuff)
+    case _ => println("gun not found")
