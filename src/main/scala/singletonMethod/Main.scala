@@ -1,4 +1,4 @@
-package SingletonMethod
+package singletonMethod
 
 @main def strat() =
   println("Singleton Method")

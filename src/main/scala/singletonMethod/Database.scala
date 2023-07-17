@@ -1,4 +1,4 @@
-package SingletonMethod
+package singletonMethod
 
 import com.sun.security.auth.UserPrincipal
 
