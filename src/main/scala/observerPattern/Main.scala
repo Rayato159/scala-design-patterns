@@ -1,6 +1,6 @@
 package observerPattern
 
-@main def start() =
+@main def start(): Unit =
   println("Observer Pattern")
 
   val weatherStation: WeatherStation = WeatherStation()
